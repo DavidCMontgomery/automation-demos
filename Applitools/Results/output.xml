@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170512 10:59:21.622" generator="Robot 3.0.2 (Python 2.7.13 on darwin)">
+<suite source="/Users/dmontgomery/Sites/Robot Framework Demos/Applitools/tests/applitools.robot" id="s1" name="Applitools">
+<test id="s1-t1" name="Load Home Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://www.navinet.net/</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170512 10:59:21.746" level="INFO">Opening browser 'chrome' to base url 'http://www.navinet.net/'</msg>
+<status status="PASS" endtime="20170512 10:59:29.086" starttime="20170512 10:59:21.746"></status>
+</kw>
+<kw name="Open Eyes Session" library="RobotAppEyes">
+<doc>Starts a session with the Applitools Eyes Website.</doc>
+<arguments>
+<arg>http://www.navinet.net/</arg>
+<arg>RobotAppEyes_Test</arg>
+<arg>NaviNet_RobotAppEyes_Test</arg>
+<arg>gG9961WJ2SX8LrX0YnwxzUz4H8aaBXPpLzar1G21ASfw110</arg>
+<arg>width=1024</arg>
+<arg>height=768</arg>
+</arguments>
+<status status="PASS" endtime="20170512 10:59:30.313" starttime="20170512 10:59:29.087"></status>
+</kw>
+<kw name="Check Eyes Window" library="RobotAppEyes">
+<doc>Takes a snapshot from the browser using the web driver and matches it with</doc>
+<arguments>
+<arg>NaviNet Home</arg>
+</arguments>
+<status status="PASS" endtime="20170512 10:59:41.668" starttime="20170512 10:59:30.313"></status>
+</kw>
+<doc>Test that as a user I can load the home page and confirm the layout is stable</doc>
+<tags>
+<tag>Regression</tag>
+</tags>
+<status status="PASS" endtime="20170512 10:59:41.668" critical="yes" starttime="20170512 10:59:21.745"></status>
+</test>
+<doc>This is some information about the suite</doc>
+<status status="PASS" endtime="20170512 10:59:41.670" starttime="20170512 10:59:21.624"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Regression</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Applitools" pass="1">Applitools</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
