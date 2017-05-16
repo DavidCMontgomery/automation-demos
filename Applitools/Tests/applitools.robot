@@ -9,7 +9,14 @@ Library  RobotAppEyes
 *** Variables ***
 ${URL}  http://z.co.nz/
 ${BROWSER}  chrome
+${OS}  Mac OS X 10.11
 ${APPLITOOLS_KEY}  gG9961WJ2SX8LrX0YnwxzUz4H8aaBXPpLzar1G21ASfw110
+${APPLITOOLS_APP_NAME}  Z
+${APPLITOOLS_TEST_NAME}  Z Home Page
+${PAGE_WIDTH}  2000
+${PAGE_HEIGHT}  1000
+${MATCH_LEVEL}  STRICT
+
 
 *** Test Cases ***
 Load Home Page
@@ -17,9 +24,9 @@ Load Home Page
     [Tags]  Regression
 
     open browser  ${URL}  ${BROWSER}
-
-    open eyes session  ${URL}  RobotAppEyes_Test  Z_RobotAppEyes_Test  gG9961WJ2SX8LrX0YnwxzUz4H8aaBXPpLzar1G21ASfw110  width=1024  height=768
+    open eyes session  ${URL}  Z Desktop  Z Home Page  ${APPLITOOLS_KEY}   width=1024  height=768  osname=${OS}  browsername=${BROWSER}  matchlevel=${MATCH_LEVEL}
     check eyes window  Z Home
-
+    close eyes session
 
 *** Keywords ***
+
