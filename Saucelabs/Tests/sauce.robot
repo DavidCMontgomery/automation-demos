@@ -4,12 +4,13 @@ Documentation  This is a demo for connecting to SauceLabs
 Library  Selenium2Library
 
 Test Setup  Begin Web Test
-#Test Teardown  End Web Test
+Test Teardown  End Web Test
 
 #Instructions
+#NOTE: I need to watch the Robot Framework tutorial to finish this off
 
 *** Variables ***
-${UAT_URL} =  https://z.co.nz
+${URL} =  https://z.co.nz
 ${BROWSER} =  chrome
 ${REMOTE_URL} =
 ${DESIRED_CAPABILITIES} =
@@ -24,7 +25,7 @@ Load Home Page
 
 *** Keywords ***
 Begin Web Test
-    Open Browser  about:blank  ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=${DESIRED_CAPABILITIES}
+    Open Browser  ${URL}  ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=${DESIRED_CAPABILITIES}
     # this line is optional if you want to see your test case name sooner in the Saucelabs.com UI
     # Can only be run AFTER opening a browser
     Run keyword if  '${REMOTE_URL}' != ''
@@ -41,3 +42,5 @@ End Web Test
     ...  ${SUITE_NAME}: ${TEST_NAME}
     ...  ${TEST_STATUS}  ${TEST_TAGS}  ${REMOTE_URL}
     close browser
+
+open
