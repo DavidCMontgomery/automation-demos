@@ -7,8 +7,8 @@ Library  Selenium2Library
 ${URL}  https://z.co.nz/
 ${BROWSER}  chrome
 ${REMOTE_URL}  http://heydaytesters:95dfab42-65b8-4fec-818c-b777f16593d8@ondemand.saucelabs.com:80/wd/hub
-#${DESIRED_CAPABILITIES}  name:Win7 + IE11, platform:Windows 7,browserName:internet explorer,version:11.0
-${DESIRED_CAPABILITIES}  name:iPhone 6s + Safari, appiumVersion:1.6.4,deviceName:iPhone 6s Simulator,deviceOrientation:portrait,platformVersion:10.2,platformName:iOS,browserName:Safari
+${DESIRED_CAPABILITIES}  name:Win7 + IE11, platform:Windows 7,browserName:internet explorer,version:11.0
+#${DESIRED_CAPABILITIES}  name:iPhone 6s + Safari, appiumVersion:1.6.4,deviceName:iPhone 6s Simulator,deviceOrientation:portrait,platformVersion:10.2,platformName:iOS,browserName:Safari
 
 *** Test Cases ***
 Load Home Page

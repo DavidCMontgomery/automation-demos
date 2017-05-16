@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  This is some information about the suite
+Documentation  This is a demo
 
 Library  Selenium2Library
 Library  RobotAppEyes
@@ -11,10 +11,10 @@ ${URL}  http://z.co.nz/
 ${BROWSER}  chrome
 ${OS}  Mac OS X 10.11
 ${APPLITOOLS_KEY}  gG9961WJ2SX8LrX0YnwxzUz4H8aaBXPpLzar1G21ASfw110
-${APPLITOOLS_APP_NAME}  Z
-${APPLITOOLS_TEST_NAME}  Z Home Page
-${PAGE_WIDTH}  2000
-${PAGE_HEIGHT}  1000
+${APPLITOOLS_APPNAME}  Z Desktop
+${APPLITOOLS_TESTNAME}  Z Home Page
+${PAGE_WIDTH}  1600
+${PAGE_HEIGHT}  1200
 ${MATCH_LEVEL}  LAYOUT
 
 
@@ -24,7 +24,7 @@ Load Home Page
     [Tags]  Regression
 
     open browser  ${URL}  ${BROWSER}
-    open eyes session  ${URL}  Z Desktop  Z Home Page  ${APPLITOOLS_KEY}   width=1024  height=768  osname=${OS}  browsername=${BROWSER}  matchlevel=${MATCH_LEVEL}
+    open eyes session  ${URL}  ${APPLITOOLS_APPNAME}  ${APPLITOOLS_TESTNAME}  ${APPLITOOLS_KEY}  width=${PAGE_WIDTH}  height=${PAGE_HEIGHT}  osname=${OS}  browsername=${BROWSER}  matchlevel=${MATCH_LEVEL}
     check eyes window  Z Home
     close eyes session
 

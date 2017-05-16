@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170516 14:39:08.100" generator="Robot 3.0.2 (Python 2.7.13 on darwin)">
+<robot generated="20170517 11:51:02.096" generator="Robot 3.0.2 (Python 2.7.13 on darwin)">
 <suite source="/Users/dmontgomery/Sites/Robot Automation Demos/Applitools/tests/applitools.robot" id="s1" name="Applitools">
 <test id="s1-t1" name="Load Home Page">
 <kw name="Open Browser" library="Selenium2Library">
@@ -8,44 +8,44 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20170516 14:39:08.410" level="INFO">Opening browser 'chrome' to base url 'http://z.co.nz/'</msg>
-<status status="PASS" endtime="20170516 14:39:14.592" starttime="20170516 14:39:08.410"></status>
+<msg timestamp="20170517 11:51:02.235" level="INFO">Opening browser 'chrome' to base url 'http://z.co.nz/'</msg>
+<status status="PASS" endtime="20170517 11:51:08.372" starttime="20170517 11:51:02.235"></status>
 </kw>
 <kw name="Open Eyes Session" library="RobotAppEyes">
 <doc>Starts a session with the Applitools Eyes Website.</doc>
 <arguments>
 <arg>${URL}</arg>
-<arg>Z Desktop</arg>
-<arg>Z Home Page</arg>
+<arg>${APPLITOOLS_APPNAME}</arg>
+<arg>${APPLITOOLS_TESTNAME}</arg>
 <arg>${APPLITOOLS_KEY}</arg>
-<arg>width=1024</arg>
-<arg>height=768</arg>
+<arg>width=${PAGE_WIDTH}</arg>
+<arg>height=${PAGE_HEIGHT}</arg>
 <arg>osname=${OS}</arg>
 <arg>browsername=${BROWSER}</arg>
 <arg>matchlevel=${MATCH_LEVEL}</arg>
 </arguments>
-<status status="PASS" endtime="20170516 14:39:15.885" starttime="20170516 14:39:14.592"></status>
+<status status="PASS" endtime="20170517 11:51:09.590" starttime="20170517 11:51:08.372"></status>
 </kw>
 <kw name="Check Eyes Window" library="RobotAppEyes">
 <doc>Takes a snapshot from the browser using the web driver and matches it with</doc>
 <arguments>
 <arg>Z Home</arg>
 </arguments>
-<status status="PASS" endtime="20170516 14:39:29.162" starttime="20170516 14:39:15.886"></status>
+<status status="PASS" endtime="20170517 11:51:32.230" starttime="20170517 11:51:09.591"></status>
 </kw>
 <kw name="Close Eyes Session" library="RobotAppEyes">
 <doc>Closes a session and returns the results of the session.</doc>
-<msg timestamp="20170516 14:39:30.217" level="FAIL">TestFailedError: 'Z Home Page' of 'Z Desktop'. See details at https://eyes.applitools.com/app/batches/00000251907398441330/00000251907398441146?accountId=hkuOtodjLU2FS7JC8MO2pQ~~ , Existing test [ steps: 1, matches: 0, mismatches: 1, missing: 0 ], URL: https://eyes.applitools.com/app/batches/00000251907398441330/00000251907398441146?accountId=hkuOtodjLU2FS7JC8MO2pQ~~</msg>
-<status status="FAIL" endtime="20170516 14:39:30.217" starttime="20170516 14:39:29.162"></status>
+<msg timestamp="20170517 11:51:33.157" level="FAIL">TestFailedError: 'Z Home Page' of 'Z Desktop'. See details at https://eyes.applitools.com/app/batches/00000251907322127134/00000251907322126712?accountId=hkuOtodjLU2FS7JC8MO2pQ~~ , Existing test [ steps: 1, matches: 0, mismatches: 1, missing: 0 ], URL: https://eyes.applitools.com/app/batches/00000251907322127134/00000251907322126712?accountId=hkuOtodjLU2FS7JC8MO2pQ~~</msg>
+<status status="FAIL" endtime="20170517 11:51:33.157" starttime="20170517 11:51:32.231"></status>
 </kw>
 <doc>Test that as a user I can load the home page and confirm the layout is stable</doc>
 <tags>
 <tag>Regression</tag>
 </tags>
-<status status="FAIL" endtime="20170516 14:39:30.217" critical="yes" starttime="20170516 14:39:08.409">TestFailedError: 'Z Home Page' of 'Z Desktop'. See details at https://eyes.applitools.com/app/batches/00000251907398441330/00000251907398441146?accountId=hkuOtodjLU2FS7JC8MO2pQ~~ , Existing test [ steps: 1, matches: 0, mismatches: 1, missing: 0 ], URL: https://eyes.applitools.com/app/batches/00000251907398441330/00000251907398441146?accountId=hkuOtodjLU2FS7JC8MO2pQ~~</status>
+<status status="FAIL" endtime="20170517 11:51:33.158" critical="yes" starttime="20170517 11:51:02.234">TestFailedError: 'Z Home Page' of 'Z Desktop'. See details at https://eyes.applitools.com/app/batches/00000251907322127134/00000251907322126712?accountId=hkuOtodjLU2FS7JC8MO2pQ~~ , Existing test [ steps: 1, matches: 0, mismatches: 1, missing: 0 ], URL: https://eyes.applitools.com/app/batches/00000251907322127134/00000251907322126712?accountId=hkuOtodjLU2FS7JC8MO2pQ~~</status>
 </test>
 <doc>This is some information about the suite</doc>
-<status status="FAIL" endtime="20170516 14:39:30.218" starttime="20170516 14:39:08.102"></status>
+<status status="FAIL" endtime="20170517 11:51:33.158" starttime="20170517 11:51:02.098"></status>
 </suite>
 <statistics>
 <total>
