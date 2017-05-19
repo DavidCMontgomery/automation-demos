@@ -10,7 +10,8 @@ Library  RobotAppEyes
 ${URL}  http://z.co.nz/
 ${BROWSER}  chrome
 ${OS}  Mac OS X 10.11
-${APPLITOOLS_KEY}  gG9961WJ2SX8LrX0YnwxzUz4H8aaBXPpLzar1G21ASfw110
+${APPLITOOLS_KEY}  D4HLYgJyunaIGwLWcnCzJdXOrkD9e3jeBIBgmrdFmwU110
+
 ${APPLITOOLS_APPNAME}  Z Desktop
 ${APPLITOOLS_TESTNAME}  Z Home Page
 ${PAGE_WIDTH}  1600
@@ -30,3 +31,4 @@ Load Home Page
 
 *** Keywords ***
 
+We‘ll need your email to get in touch if you win

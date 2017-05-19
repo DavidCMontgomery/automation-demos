@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170517 11:51:02.096" generator="Robot 3.0.2 (Python 2.7.13 on darwin)">
-<suite source="/Users/dmontgomery/Sites/Robot Automation Demos/Applitools/tests/applitools.robot" id="s1" name="Applitools">
+<robot generated="20170517 15:53:40.525" generator="Robot 3.0.2 (Python 2.7.13 on darwin)">
+<suite source="/Users/dmontgomery/Sites/Robot Automation Demos/applitools/tests/applitools.robot" id="s1" name="Applitools">
 <test id="s1-t1" name="Load Home Page">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
@@ -8,8 +8,8 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20170517 11:51:02.235" level="INFO">Opening browser 'chrome' to base url 'http://z.co.nz/'</msg>
-<status status="PASS" endtime="20170517 11:51:08.372" starttime="20170517 11:51:02.235"></status>
+<msg timestamp="20170517 15:53:40.842" level="INFO">Opening browser 'chrome' to base url 'http://z.co.nz/'</msg>
+<status status="PASS" endtime="20170517 15:53:47.623" starttime="20170517 15:53:40.842"></status>
 </kw>
 <kw name="Open Eyes Session" library="RobotAppEyes">
 <doc>Starts a session with the Applitools Eyes Website.</doc>
@@ -24,39 +24,38 @@
 <arg>browsername=${BROWSER}</arg>
 <arg>matchlevel=${MATCH_LEVEL}</arg>
 </arguments>
-<status status="PASS" endtime="20170517 11:51:09.590" starttime="20170517 11:51:08.372"></status>
+<status status="PASS" endtime="20170517 15:53:50.371" starttime="20170517 15:53:47.623"></status>
 </kw>
 <kw name="Check Eyes Window" library="RobotAppEyes">
 <doc>Takes a snapshot from the browser using the web driver and matches it with</doc>
 <arguments>
 <arg>Z Home</arg>
 </arguments>
-<status status="PASS" endtime="20170517 11:51:32.230" starttime="20170517 11:51:09.591"></status>
+<status status="PASS" endtime="20170517 15:54:03.300" starttime="20170517 15:53:50.371"></status>
 </kw>
 <kw name="Close Eyes Session" library="RobotAppEyes">
 <doc>Closes a session and returns the results of the session.</doc>
-<msg timestamp="20170517 11:51:33.157" level="FAIL">TestFailedError: 'Z Home Page' of 'Z Desktop'. See details at https://eyes.applitools.com/app/batches/00000251907322127134/00000251907322126712?accountId=hkuOtodjLU2FS7JC8MO2pQ~~ , Existing test [ steps: 1, matches: 0, mismatches: 1, missing: 0 ], URL: https://eyes.applitools.com/app/batches/00000251907322127134/00000251907322126712?accountId=hkuOtodjLU2FS7JC8MO2pQ~~</msg>
-<status status="FAIL" endtime="20170517 11:51:33.157" starttime="20170517 11:51:32.231"></status>
+<status status="PASS" endtime="20170517 15:54:04.222" starttime="20170517 15:54:03.300"></status>
 </kw>
 <doc>Test that as a user I can load the home page and confirm the layout is stable</doc>
 <tags>
 <tag>Regression</tag>
 </tags>
-<status status="FAIL" endtime="20170517 11:51:33.158" critical="yes" starttime="20170517 11:51:02.234">TestFailedError: 'Z Home Page' of 'Z Desktop'. See details at https://eyes.applitools.com/app/batches/00000251907322127134/00000251907322126712?accountId=hkuOtodjLU2FS7JC8MO2pQ~~ , Existing test [ steps: 1, matches: 0, mismatches: 1, missing: 0 ], URL: https://eyes.applitools.com/app/batches/00000251907322127134/00000251907322126712?accountId=hkuOtodjLU2FS7JC8MO2pQ~~</status>
+<status status="PASS" endtime="20170517 15:54:04.223" critical="yes" starttime="20170517 15:53:40.841"></status>
 </test>
-<doc>This is some information about the suite</doc>
-<status status="FAIL" endtime="20170517 11:51:33.158" starttime="20170517 11:51:02.098"></status>
+<doc>This is a demo</doc>
+<status status="PASS" endtime="20170517 15:54:04.224" starttime="20170517 15:53:40.527"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
-<stat fail="1" pass="0">Regression</stat>
+<stat fail="0" pass="1">Regression</stat>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="Applitools" pass="0">Applitools</stat>
+<stat fail="0" id="s1" name="Applitools" pass="1">Applitools</stat>
 </suite>
 </statistics>
 <errors>

@@ -2,6 +2,7 @@
 Documentation  This is a demo for connecting to SauceLabs in the most basic way
 
 Library  Selenium2Library
+Library  RobotAppEyes
 
 *** Variables ***
 #SauceLabs
@@ -13,11 +14,11 @@ ${DESIRED_CAPABILITIES}  name:Win7 + IE11, platform:Windows 7,browserName:intern
 
 #Applitools
 ${OS}  Mac OS X 10.11
-${APPLITOOLS_KEY}  gG9961WJ2SX8LrX0YnwxzUz4H8aaBXPpLzar1G21ASfw110
+${APPLITOOLS_KEY}  D4HLYgJyunaIGwLWcnCzJdXOrkD9e3jeBIBgmrdFmwU110
 ${APPLITOOLS_APPNAME}  Z Desktop
 ${APPLITOOLS_TESTNAME}  Z Home Page
-${PAGE_WIDTH}  1600
-${PAGE_HEIGHT}  1200
+${PAGE_WIDTH}  1280
+${PAGE_HEIGHT}  1024
 ${MATCH_LEVEL}  LAYOUT
 
 *** Test Cases ***
@@ -28,6 +29,7 @@ Load Home Page
     #Connect to SauceLabs
     open browser  ${URL}  ${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=${DESIRED_CAPABILITIES}
     wait until page contains  Apply for your Z Card
+
 
     #Connect to Applitools
     open eyes session  ${URL}  ${APPLITOOLS_APPNAME}  ${APPLITOOLS_TESTNAME}  ${APPLITOOLS_KEY}  width=${PAGE_WIDTH}  height=${PAGE_HEIGHT}  osname=${OS}  browsername=${BROWSER}  matchlevel=${MATCH_LEVEL}
